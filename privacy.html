@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#10141c">
+    <title>Privacy Policy — InkBleedHazard</title>
+    <meta name="description" content="Privacy policy for InkBleedHazard. The App Store label says the developer does not collect data from this fluid puzzle. Drops, levels, and stars stay with the installed app.">
+    <style>
+        :root {
+            --night: #10141c;
+            --night-2: #181e2a;
+            --parchment: #f6f0e4;
+            --parchment-2: #efe4d0;
+            --ink: #141820;
+            --muted: #5c564c;
+            --pool: #1d4ed8;
+            --bloom: #6d28d9;
+            --hazard: #9f1239;
+            --safe: #0f766e;
+            --line: rgba(20, 24, 32, 0.12);
+            --shadow: 0 22px 50px rgba(0, 0, 0, 0.28);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+            color: var(--parchment);
+            background: var(--night);
+            min-height: 100vh;
+            background-image:
+                radial-gradient(ellipse 46% 34% at 0% 0%, rgba(109, 40, 217, 0.4), transparent 60%),
+                radial-gradient(ellipse 36% 28% at 100% 8%, rgba(29, 78, 216, 0.32), transparent 56%),
+                radial-gradient(ellipse 26% 20% at 90% 100%, rgba(159, 18, 57, 0.18), transparent 52%);
+        }
+
+        a:focus-visible, .btn:focus-visible {
+            outline: 2px solid #f9a8d4;
+            outline-offset: 3px;
+        }
+
+        .wrap {
+            max-width: 1120px;
+            margin: 0 auto;
+            padding: 28px 22px 80px;
+        }
+
+        .bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            margin-bottom: 32px;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .brand svg { width: 46px; height: 46px; flex: none; }
+
+        .brand strong {
+            display: block;
+            font-family: Didot, "Bodoni MT", "Bodoni 72", "Times New Roman", serif;
+            font-weight: 700;
+            font-size: 1.28rem;
+            letter-spacing: -0.02em;
+        }
+
+        .brand small {
+            display: block;
+            margin-top: 2px;
+            color: #c4b5fd;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.16em;
+            text-transform: uppercase;
+        }
+
+        .bar nav { display: flex; gap: 22px; font-weight: 600; font-size: 0.95rem; }
+        .bar nav a { color: rgba(246, 240, 228, 0.72); text-decoration: none; }
+        .bar nav a:hover, .bar nav a[aria-current="page"] { color: var(--parchment); }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 230px 1fr;
+            gap: 22px;
+            align-items: start;
+        }
+
+        .rail {
+            position: sticky;
+            top: 18px;
+            background: rgba(246, 240, 228, 0.05);
+            border: 1px solid rgba(246, 240, 228, 0.1);
+            border-radius: 18px;
+            padding: 16px 14px 18px;
+        }
+
+        .rail p {
+            color: #c4b5fd;
+            font-size: 0.72rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .rail ol {
+            list-style: none;
+            display: grid;
+            gap: 8px;
+        }
+
+        .rail a {
+            color: rgba(246, 240, 228, 0.78);
+            text-decoration: none;
+            font-size: 0.92rem;
+            line-height: 1.35;
+        }
+
+        .rail a:hover { color: white; }
+
+        .stack { display: grid; gap: 12px; }
+
+        .mast {
+            background:
+                radial-gradient(circle at 90% 0%, rgba(29, 78, 216, 0.2), transparent 36%),
+                var(--parchment);
+            color: var(--ink);
+            border-radius: 26px 18px 22px 30px;
+            padding: 32px 32px 26px;
+            box-shadow: var(--shadow);
+        }
+
+        .dated {
+            color: var(--pool);
+            font-size: 0.78rem;
+            font-weight: 800;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-family: Didot, "Bodoni MT", "Bodoni 72", "Times New Roman", serif;
+            font-weight: 700;
+            font-size: clamp(2.2rem, 4.4vw, 3.5rem);
+            line-height: 0.96;
+            letter-spacing: -0.03em;
+            margin-bottom: 14px;
+        }
+
+        .lead {
+            color: var(--muted);
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 42rem;
+        }
+
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .facts div {
+            background: var(--night);
+            color: var(--parchment);
+            border-radius: 14px;
+            padding: 12px 14px;
+        }
+
+        .facts strong {
+            display: block;
+            font-family: Didot, "Bodoni MT", "Bodoni 72", "Times New Roman", serif;
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+
+        .facts span {
+            color: rgba(246, 240, 228, 0.7);
+            font-size: 0.85rem;
+            line-height: 1.4;
+        }
+
+        .blot {
+            background: var(--parchment);
+            color: var(--ink);
+            border-radius: 18px;
+            padding: 22px 26px 24px;
+            box-shadow: 0 10px 28px rgba(0, 0, 0, 0.16);
+        }
+
+        .blot header {
+            display: flex;
+            gap: 12px;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+
+        .blot header em {
+            font-style: normal;
+            font-weight: 800;
+            color: var(--bloom);
+            letter-spacing: 0.08em;
+            font-size: 0.78rem;
+        }
+
+        .blot h2 {
+            font-family: Didot, "Bodoni MT", "Bodoni 72", "Times New Roman", serif;
+            font-size: 1.55rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        .blot p, .blot li {
+            color: #3a342c;
+            line-height: 1.7;
+            font-size: 1.02rem;
+        }
+
+        .blot p + p { margin-top: 10px; }
+
+        .blot ul {
+            margin: 10px 0 0 1.15rem;
+        }
+
+        .blot li + li { margin-top: 6px; }
+
+        .call {
+            margin-top: 14px;
+            padding: 12px 14px;
+            border-radius: 12px;
+            background: rgba(29, 78, 216, 0.08);
+            color: #1e3a8a;
+            font-weight: 600;
+            line-height: 1.55;
+        }
+
+        .end {
+            background: linear-gradient(120deg, #1e1b4b, #1d4ed8 58%, #9f1239);
+            border-radius: 18px;
+            padding: 20px 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .end p { line-height: 1.55; max-width: 36rem; color: rgba(246, 240, 228, 0.92); }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-weight: 700;
+            border-radius: 999px;
+            padding: 12px 16px;
+            background: var(--parchment);
+            color: var(--ink);
+            white-space: nowrap;
+        }
+
+        footer {
+            margin-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+            color: rgba(246, 240, 228, 0.62);
+            font-size: 0.86rem;
+        }
+
+        footer a { color: #f9a8d4; text-decoration: none; font-weight: 700; }
+        footer a:hover { text-decoration: underline; }
+
+        @media (max-width: 860px) {
+            .layout, .facts { grid-template-columns: 1fr; }
+            .rail { position: static; }
+            .bar { align-items: flex-start; flex-wrap: wrap; }
+            .bar nav { width: 100%; }
+            .mast, .blot { padding: 22px 18px; }
+            .end .btn { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <header class="bar">
+            <a class="brand" href="index.html">
+                <svg viewBox="0 0 48 48" aria-hidden="true">
+                    <rect width="48" height="48" rx="14" fill="#f6f0e4"/>
+                    <path fill="#1d4ed8" d="M24 7c6.2.8 11 6.2 11.4 12.2 2.2 3.2 6.4 4.4 6.6 8.6-.2 6.2-6.2 8.6-10.6 9.4-2.2 4.4-3.6 8.8-9.4 8.8-6.4 0-9.6-5.2-10.6-9.4-5.2-.6-8.6-4.8-7.4-10.2 1-4.2 5.4-5.2 7.2-8.2C13.2 12.2 17.6 6.4 24 7z"/>
+                    <circle cx="34" cy="13" r="3.2" fill="#6d28d9"/>
+                    <circle cx="15" cy="35" r="2.1" fill="#9f1239"/>
+                </svg>
+                <span>
+                    <strong>InkBleedHazard</strong>
+                    <small>Fluid puzzle</small>
+                </span>
+            </a>
+            <nav>
+                <a href="index.html">The puzzle</a>
+                <a href="privacy.html" aria-current="page">Privacy</a>
+            </nav>
+        </header>
+
+        <div class="layout">
+            <nav class="rail" aria-label="Policy sections">
+                <p>In this policy</p>
+                <ol>
+                    <li><a href="#scope">Scope</a></li>
+                    <li><a href="#play">Play without a profile</a></li>
+                    <li><a href="#label">Store privacy label</a></li>
+                    <li><a href="#session">Level session data</a></li>
+                    <li><a href="#stars">Stars and revives</a></li>
+                    <li><a href="#apple">Apple distribution</a></li>
+                    <li><a href="#site">These pages</a></li>
+                    <li><a href="#young">Younger players</a></li>
+                    <li><a href="#rights">Requests</a></li>
+                    <li><a href="#updates">Updates</a></li>
+                </ol>
+            </nav>
+
+            <div class="stack">
+                <header class="mast">
+                    <p class="dated">Effective 3 October 2026</p>
+                    <h1>Privacy policy for the ink puzzle.</h1>
+                    <p class="lead">
+                        InkBleedHazard is a free casual game. You tap a limited number of times, drop ink on a parchment shape, and try to fill it before the bleed crosses the safe zone. This policy explains that product’s privacy posture for players and families. It is a plain-language summary, not legal advice for your country.
+                    </p>
+                    <div class="facts">
+                        <div>
+                            <strong>Not collected</strong>
+                            <span>The App Store label says the developer does not collect data from this app.</span>
+                        </div>
+                        <div>
+                            <strong>No profile</strong>
+                            <span>A level starts from a drop, not from a login, name, or contact list.</span>
+                        </div>
+                        <div>
+                            <strong>Age 4+</strong>
+                            <span>The store age rating is 4+. A guardian chooses the install.</span>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="blot" id="scope">
+                    <header>
+                        <em>01</em>
+                        <h2>Scope</h2>
+                    </header>
+                    <p>
+                        This policy covers the InkBleedHazard app distributed on the App Store and the two pages published with it: the game introduction and this policy. It describes the publisher of the game as a product, and it does not point to a personal homepage.
+                    </p>
+                    <p>
+                        Apple’s own services — the store, your Apple ID, system backups, and parental controls — follow Apple’s terms and Apple’s privacy policy. Those services are named here only so the boundary is clear.
+                    </p>
+                </section>
+
+                <section class="blot" id="play">
+                    <header>
+                        <em>02</em>
+                        <h2>Play without a profile</h2>
+                    </header>
+                    <p>
+                        Opening a level does not ask for an account. The puzzle does not request an email address, phone number, photo, contact book, precise location, or a public player name before the first drop.
+                    </p>
+                    <p>
+                        The actions that matter in InkBleedHazard are on-screen: choosing a point on the parchment, spending one tap from the level’s limit, watching ink pool through rivers, mazes, bottlenecks, and friction zones, then either filling the shape or ruining the sheet. None of those gestures is a form you submit to a server described in the store listing.
+                    </p>
+                </section>
+
+                <section class="blot" id="label">
+                    <header>
+                        <em>03</em>
+                        <h2>Store privacy label</h2>
+                    </header>
+                    <p>
+                        On the App Store, the privacy section for InkBleedHazard states that data is not collected. The developer indicated that the app does not collect data. This page does not add advertising identifiers, analytics events, or partner SDKs that the listing does not show.
+                    </p>
+                    <p>
+                        Apple notes that privacy practices may vary, for example with the features you use or with your age. If the live label on the product page changes, that label is the source to re-check. This document will be replaced when the described practice changes.
+                    </p>
+                    <p class="call">A “data not collected” label is the opposite of a hidden event log. This policy does not invent one.</p>
+                </section>
+
+                <section class="blot" id="session">
+                    <header>
+                        <em>04</em>
+                        <h2>Level session data</h2>
+                    </header>
+                    <p>
+                        A run has ordinary puzzle state: which of the ten levels you are on, how many taps remain, whether ink stayed inside the safe zone, and how many stars the run produced. That state belongs to the installed game on the iPhone, iPad, or other Apple device where you play.
+                    </p>
+                    <p>
+                        The store label does not describe that state as data collected by the developer. Deleting InkBleedHazard removes the local app copy the system kept for it. If you have turned on a device backup yourself, such as iCloud Backup, Apple may include app data under the backup settings on your Apple ID. There is no separate InkBleedHazard cloud account in the product description.
+                    </p>
+                </section>
+
+                <section class="blot" id="stars">
+                    <header>
+                        <em>05</em>
+                        <h2>Stars and revives</h2>
+                    </header>
+                    <p>
+                        Stars are an in-game tally from how cleanly a shape is filled. The game lets you spend them on a revive in the middle of a level, so a failing drop does not have to end the sheet immediately. That exchange is a rule of the puzzle.
+                    </p>
+                    <p>
+                        The App Store lists the app as free. This policy does not describe a wallet, a saved payment card, or a publisher account used to buy stars. Any purchase flow Apple itself presents at download time, if one appears on your device, is Apple’s transaction.
+                    </p>
+                </section>
+
+                <section class="blot" id="apple">
+                    <header>
+                        <em>06</em>
+                        <h2>Apple distribution</h2>
+                    </header>
+                    <p>
+                        InkBleedHazard is obtained from the App Store. Download, update, refund, and the privacy switches in iOS and iPadOS are handled by Apple. The game requires iOS 15 or later and is offered in English. The listing presents it for iPhone and iPad, and it is designed for iPad.
+                    </p>
+                    <p>
+                        Information Apple already holds because you use an Apple ID is governed by Apple. Installing this puzzle does not move that information into a publisher profile.
+                    </p>
+                </section>
+
+                <section class="blot" id="site">
+                    <header>
+                        <em>07</em>
+                        <h2>These pages</h2>
+                    </header>
+                    <p>
+                        The introduction page and this policy are static pages about InkBleedHazard. They do not include an account, a newsletter, a comment box, or a payment form. Type is set with fonts already on your device, so opening either page is not a request to a separate font host.
+                    </p>
+                    <p>
+                        The outbound link on both pages is the App Store listing for this game. There is no personal website attached to the pages.
+                    </p>
+                </section>
+
+                <section class="blot" id="young">
+                    <header>
+                        <em>08</em>
+                        <h2>Younger players</h2>
+                    </header>
+                    <p>
+                        The age rating on the store is 4+. A parent or guardian decides whether the puzzle is installed. Screen Time, Ask to Buy, and Family Sharing can block or approve that install where those Apple controls are turned on.
+                    </p>
+                    <p>
+                        The game does not begin by asking a child to register. If you believe a child sent personal information to the publisher outside ordinary play, use the support options on the App Store listing and include only what is needed to identify the request.
+                    </p>
+                </section>
+
+                <section class="blot" id="rights">
+                    <header>
+                        <em>09</em>
+                        <h2>Requests</h2>
+                    </header>
+                    <p>
+                        Depending on where you live, you may have rights to access, correct, or delete personal information, or to object to certain processing. Because the store label states that data is not collected from the app, the publisher may have no InkBleedHazard file to produce. You can still ask.
+                    </p>
+                    <p>
+                        Send the request through the support options on the InkBleedHazard App Store listing. This site does not publish a personal email address. Please do not include identity documents unless a reply specifically asks for a narrower detail.
+                    </p>
+                    <ul>
+                        <li>Say that the request is about InkBleedHazard privacy.</li>
+                        <li>Describe what you want done.</li>
+                        <li>Keep unrelated personal details out of the first message.</li>
+                    </ul>
+                </section>
+
+                <section class="blot" id="updates">
+                    <header>
+                        <em>10</em>
+                        <h2>Updates</h2>
+                    </header>
+                    <p>
+                        The effective date above is the date of this wording. If a later build of InkBleedHazard starts collecting data, this page will be rewritten and the App Store privacy label should be updated to match. Until then, the practice described here is on-device ink play under a store label of data not collected.
+                    </p>
+                </section>
+
+                <div class="end">
+                    <p>The listing, the privacy label, and support for InkBleedHazard are on the App Store page.</p>
+                    <a class="btn" href="https://apps.apple.com/us/app/inkbleedhazard/id6816077978?uo=4" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 InkBleedHazard. Privacy policy for the ink puzzle.</p>
+            <p><a href="index.html">The puzzle</a> · <a href="https://apps.apple.com/us/app/inkbleedhazard/id6816077978?uo=4" target="_blank" rel="noopener noreferrer">App Store</a></p>
+        </footer>
+    </div>
+</body>
+</html>
